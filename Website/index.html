@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinyiko's Food Corner.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+      
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Tinyiko's Food Corner</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="cart-icon">
+                        <a href="#cart" id="cart-toggle">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Culinaria MoÇambicana </h1>
+            <p>Venha experimentar o melhor da MOZ com amigos e com familia</p>
+            <a href="#menu" class="btn">Explore Our Menu</a>
+        </div>
+    </section> 
+
+
+
+
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-tab="food">Food</button>
+                <button class="tab-btn" data-tab="drinks">Drinks</button>
+            </div>
+
+            <div class="menu-content">
+                <!-- Food Items (8 items) -->
+                <div class="tab-pane active" id="food">
+                    <div class="menu-items">
+                        <!-- Food Item 1 -->
+                        <div class="menu-item">
+                            <img src="https://churrasco.coz.br/wp-content/uploads/2021/01/hamburguer-gourmet.jpg" alt="Hamburger ">
+                            <div class="item-details">
+                                <h3>Hamburger</h3>
+                                <p>Hamburger duplo com queijo </p>
+                                <div class="item-footer">
+                                    <span class="price">Mts100</span>
+                                    <button class="add-to-cart" data-id="1" data-name="Hamburger" data-price="100.00">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Food Item 2 -->
+                        <div class="menu-item">
+                            <img src="https://www.visitplano.com/wp-content/uploads/2020/12/shutterstock_784899736-scaled.jpg" alt="Hamburger com batata">
+                            <div class="item-details">
+                                <h3>Hamburger com batata</h3>
+                                <p>Hamburger duplo com batatas extras</p>
+                                <div class="item-footer">
+                                    <span class="price">Mts180</span>
+                                    <button class="add-to-cart" data-id="2" data-name="Hamburger com batata" data-price="180.00">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Food Item 3 -->
+                        <div class="menu-item">
+                            <img src="https://yellowplate.ng/wp-content/uploads/2019/04/Barbecue-full-chicken-and-fries-1440x808.jpg" alt="Frango com batatas">
+                            <div class="item-details">
+                                <h3>frango com batatas</h3>
+                                <p>Frango frito com batatas extras</p>
+                                <div class="item-footer">
+                                    <span class="price">Mts200.00</span>
+                                    <button class="add-to-cart" data-id="3" data-name="frango com batatas" data-price="200.00">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Food Item 4 -->
+                        <div class="menu-item">
+                            <img src="https://th.bing.com/th/id/OIP.JMYJnaQpGMH2fnEv9AuF0wHaE8?rs=1&pid=ImgDetMain" alt="Batatas">
+                            <div class="item-details">
+                                <h3>Batatas</h3>
+                                <p>Batatas fritas</p>
+                                <div class="item-footer">
+                                    <span class="price">Mts80</span>
+                                    <button class="add-to-cart" data-id="4" data-name="Batatas" data-price="80.00">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Food Item 5 -->
+                        <div class="menu-item">
+                            <img src="https://thumbs.dreamstime.com/b/filipino-cuisine-beef-salpicao-rice-garnish-macro-horizon-plate-horizontal-105322804.jpg" alt="Arroz com guisado de vaca">
+                            <div class="item-details">
+                                <h3>Arroz com guisado de vaca</h3>
+                                <p>Arroz com guisado de vaca</p>
+                                <div class="item-footer">
+                                    <span class="price">Mts250.00</span>
+                                    <button class="add-to-cart" data-id="5" data-name="Arroz com guisado de vaca" data-price="250.00">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Food Item 6 -->
+                        <div class="menu-item">
+                            <img src="https://th.bing.com/th/id/OIP.EEiilszps9a0sg9bHJ2-bAHaIQ?rs=1&pid=ImgDetMain" alt="Arroz com frango">
+                            <div class="item-details">
+                                <h3>Arroz com frango</h3>
+                                <p>Arroz com frango e salada extra</p>
+                                <div class="item-footer">
+                                    <span class="price">Mts190.00</span>
+                                    <button class="add-to-cart" data-id="6" data-name="Arroz com frango" data-price="190.00">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Food Item 7 -->
+                        <div class="menu-item">
+                            <img src="https://th.bing.com/th/id/R.e87a105b1367dff00979d88d5aded86c?rik=3sBTwmiZNnguyQ&pid=ImgRaw&r=0" alt="Fish and chips">
+                            <div class="item-details">
+                                <h3>Fish and chips</h3>
+                                <p>Peixe frito com batatas</p>
+                                <div class="item-footer">
+                                    <span class="price">Mts250.00</span>
+                                    <button class="add-to-cart" data-id="7" data-name="Fish and chips" data-price="250.00">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Food Item 8 -->
+                        <div class="menu-item">
+                            <img src="https://uploads.metropoles.com/wp-content/uploads/2022/02/17174324/feijoada-do-vegan-se-1024x683.jpg" alt="Arroz com feijoada">
+                            <div class="item-details">
+                                <h3>Arroz com feijoada</h3>
+                                <p>Arroz com feijoada com carne de vaca</p>
+                                <div class="item-footer">
+                                    <span class="price">Mts300.00</span>
+                                    <button class="add-to-cart" data-id="8" data-name="Arroz com feijoada" data-price="300.00">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drink Items (10 items) -->
+                <div class="tab-pane" id="drinks">
+                    <div class="menu-items">
+                        <!-- Drink Item 1 -->
+                        <div class="menu-item">
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/57e139183750493.65452f4805e22.jpg" alt="2M">
+                            <div class="item-details">
+                                <h3>2M</h3>
+                                <p>Cerveja da 2M</p>
+                                <div class="item-footer">
+                                    <span class="price">Mts60.00</span>
+                                    <button class="add-to-cart" data-id="9" data-name="2M" data-price="60.00">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Drink Item 2 -->
+                        <div class="menu-item">
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/827a14126641255.613133ecc6505.jpg" alt="Txillar">
+                            <div class="item-details">
+                                <h3>Txillar</h3>
+                                <p>Txillar</p>
+                                <div class="item-footer">
+                                    <span class="price">Mts50.00</span>
+                                    <button class="add-to-cart" data-id="10" data-name="Txillar" data-price="50.00">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Drink Item 3 -->
+                        <div class="menu-item">
+                            <img src="https://th.bing.com/th/id/R.229fdabd49bdac0445a71912362a402f?rik=i2gBJhLAgSVXvQ&pid=ImgRaw&r=0" alt="Compal">
+                            <div class="item-details">
+                                <h3>Compal</h3>
+                                <p>Sumo Compal </p>
+                                <div class="item-footer">
+                                    <span class="price">Mts100.00</span>
+                                    <button class="add-to-cart" data-id="11" data-name="Compal" data-price="100.00">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Drink Item 4 -->
+                        <div class="menu-item">
+                            <img src="https://live.staticflickr.com/7890/47115379451_b31cbaa887_b.jpg" alt="Agua">
+                            <div class="item-details">
+                                <h3>Agua</h3>
+                                <p>Agua</p>
+                                <div class="item-footer">
+                                    <span class="price">Mts40.00</span>
+                                    <button class="add-to-cart" data-id="12" data-name="Agua" data-price="40,00">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Drink Item 5 -->
+                        <div class="menu-item">
+                            <img src="https://www.biltongstmarcus.co.uk/wp-content/uploads/2020/08/ceres-various-200ml.jpg" alt="ceres juice">
+                            <div class="item-details">
+                                <h3>Ceres juice</h3>
+                                <p>Sumo de ceres</p>
+                                <div class="item-footer">
+                                    <span class="price">Mts110.00</span>
+                                    <button class="add-to-cart" data-id="13" data-name="ceres juice" data-price="110.00">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Drink Item 6 -->
+                        <div class="menu-item">
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/d5ed7d29911179.560a51d930219.png" alt="Coca cola">
+                            <div class="item-details">
+                                <h3>Coca cola</h3>
+                                <p>Coca cola</p>
+                                <div class="item-footer">
+                                    <span class="price">Mts60.00</span>
+                                    <button class="add-to-cart" data-id="14" data-name="Coca cola" data-price="60.00">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Drink Item 7 -->
+                        <div class="menu-item">
+                            <img src="https://wallpapercave.com/wp/zNTQ4HC.jpg" alt="Monster energy Drink">
+                            <div class="item-details">
+                                <h3>Monster energy Drink</h3>
+                                <p>Monster energy Drink</p>
+                                <div class="item-footer">
+                                    <span class="price">Mts130.00</span>
+                                    <button class="add-to-cart" data-id="15" data-name="Monster energy Drink" data-price="130.00">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Drink Item 8 -->
+                        <div class="menu-item">
+                            <img src="https://treatdreams.com/wp-content/uploads/2022/07/ice-cream-sundae-with-chocolate-and-cherry.jpg" alt="Ice cream">
+                            <div class="item-details">
+                                <h3>Ice cream</h3>
+                                <p>Ice cream chocolate and cherry</p>
+                                <div class="item-footer">
+                                    <span class="price">Mts50.00</span>
+                                    <button class="add-to-cart" data-id="16" data-name="ice cream" data-price="50.00">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Drink Item 9 -->
+                        <div class="menu-item">
+                            <img src="https://facts.net/wp-content/uploads/2023/06/Heineken-Beer-bottle-isolated-on-ice-cubes-730x487.jpeg" alt="Heineken">
+                            <div class="item-details">
+                                <h3>Heineken</h3>
+                                <p>Heineken</p>
+                                <div class="item-footer">
+                                    <span class="price">Mts70.00</span>
+                                    <button class="add-to-cart" data-id="17" data-name="Heineken" data-price="70.00">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Drink Item 10 -->
+                        <div class="menu-item">
+                            <img src="https://th.bing.com/th/id/OIP.U0I-MFwnhZCf0GwEvtrT1wHaF1?rs=1&pid=ImgDetMain" alt="Cocktail">
+                            <div class="item-details">
+                                <h3>Cocktail</h3>
+                                <p>Cocktail</p>
+                                <div class="item-footer">
+                                    <span class="price">Mts200.00</span>
+                                    <button class="add-to-cart" data-id="18" data-name="Cocktail" data-price="200.00">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Order</h2>
+            <div class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="cart-total">
+                <strong>Total: Mts<span id="cart-total-price">0.00</span></strong>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2>Our Aim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>We pride ourselves in giving our costomers the best freshly made meals with the best ingredients that will always be sure to please you everyday...</p>
+                    <p>Orgulhamo-nos de proporcionar aos nossos clientes as melhores refeições frescas, preparadas com os melhores ingredientes, que certamente irão agradar todos os dias...</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://media.consumeraffairs.com/files/news/fast-food-burgers-AdobeStock_108807835.jpeg" alt="Restaurant Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Visit Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Maxaquene D</p>
+                    <p><i class="fas fa-phone"></i> 873880736</p>
+                    <p><i class="fas fa-envelope"></i>Tinyiko'sFoodCorner@gmail.com</p>
+                    <h3>Hours</h3>
+                    <p>Monday - Thursday: 11am - 10pm</p>
+                    <p>Friday - Saturday: 11am - 11pm</p>
+                    <p>Sunday: 10am - 9pm</p>
+                </div>
+                <div class="contact-form">
+                    <form id="reservation-form">
+                        <h3>Make a Reservation</h3>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" placeholder="Date" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="time" placeholder="Time" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" placeholder="Number of Guests" min="1" required>
+                        </div>
+                        <button type="submit" class="btn">Book Table</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for updates and special offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Tinyiko's Food Corner. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
